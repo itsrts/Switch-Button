@@ -311,7 +311,7 @@ public class SwitchButton extends SeekBar implements
 			lastTime = System.currentTimeMillis();
 			break;
 		case MotionEvent.ACTION_UP:
-			if (lastTime != 0 && System.currentTimeMillis() - lastTime < 100) {
+			if (lastTime != 0 && System.currentTimeMillis() - lastTime < 300) {
 				toggle();
 				return true;
 			}
